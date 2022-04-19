@@ -110,6 +110,20 @@ main {
     transition: 0.3s;
 }
 
+.secondimg {
+    display: none;
+}
+
+.wholeproduct:hover .secondimg {
+    display: inline-block;
+}
+
+.wholeproduct:hover .firstimg {
+display: none;
+}
+
+
+
 .newprice {
     color: var(--color-red);
     font-weight: 700;
