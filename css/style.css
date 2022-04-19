@@ -9,9 +9,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+
 /* FINE RESET */
 
-:root{
+:root {
     --color-orange: #FF6900;
     --color-red: #FF0000;
     --color-green: #008000;
@@ -19,12 +20,12 @@ body {
 }
 
 /* HEADER STUFF */
-header{
+header {
     background-color: var(--color-orange);
     box-shadow: black 0px 0px 5px;
 }
 
-nav{
+nav {
     min-height: 70px;
     max-width: 1400px;
     margin: 0 auto;
@@ -34,60 +35,69 @@ nav{
 }
 
 
-nav ul a li{
+nav ul a li {
     display: inline-block;
     list-style: none;
     padding: 0.2rem;
     font-weight: 700;
 }
 
-nav ul a{
+nav ul a {
     text-decoration: none;
     color: white;
 }
+
 /* END HEADER STUFF */
 
-main{
-    padding: 3rem 0;
+main {
+    padding: 4rem 0;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.mainbody{
+.mainbody {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     flex-basis: calc(100% / 3);
 }
 
-.mainbody span{
+.wholeproduct{
+    padding-bottom: 3rem;
+}
+
+.mainbody span {
     font-size: 0.9rem;
 }
 
-.wholeproduct img{
-    position: relative;
+.productimg img {
     max-height: 655px
 }
 
-.imgtags{
-    position: absolute;
-    bottom: 30px;
+.productimg {
+    position: relative;
 }
 
-.sale{
+.imgtags {
+    position: absolute;
+    bottom: 50px;
+}
+
+.sale {
     padding: 0.3rem;
     color: white;
     font-weight: 700;
     background-color: var(--color-red);
 }
 
-.eco{
+.eco {
     padding: 0.3rem;
     color: white;
     font-weight: 700;
     background-color: var(--color-green);
 }
 
-.favourites{
+.favourites {
     padding: 0.8rem;
     background-color: white;
     position: absolute;
@@ -95,11 +105,45 @@ main{
     right: 0px;
 }
 
-.newprice{
+.newprice {
     color: var(--color-red);
     font-weight: 700;
 }
 
-.oldprice{
+.oldprice {
     text-decoration: line-through;
+}
+
+footer{
+    background-color: var(--color-dark);
+}
+
+.footer-container{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.footer-row h4,h5{
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.footer-row ul{
+    list-style: none;
+}
+
+.footer-row ul a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 0.5rem;
+    font-size: 0.9rem;
+}
+
+ul.social-list a li{
+    font-size: 1.3rem;
 }
