@@ -105,6 +105,11 @@ main {
     right: 0px;
 }
 
+.favourites:hover{
+    color: var(--color-red);
+    transition: 0.3s;
+}
+
 .newprice {
     color: var(--color-red);
     font-weight: 700;
